@@ -1,0 +1,532 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    background-color: #457b9d;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1fa8c;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.hero h2 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+/* All Sections */
+section {
+    padding: 35px 6%;
+}
+
+section h2 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 25px;
+}
+
+/* Search and Filters */
+.search-section form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input {
+    min-width: 240px;
+}
+
+button {
+    background-color: #1d3557;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #457b9d;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    background-color: white;
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px #00000012;
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.book-card {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.book-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    color: #1d3557;
+    margin-bottom: 8px;
+}
+
+.book-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Availability Labels */
+.available, .borrowed {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.available {
+    background-color: #d8f3dc;
+    color: #1b6b35;
+}
+
+.borrowed {
+    background-color: #ffe0e0;
+    color: #b42318;
+}
+
+/* Catalog Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1d3557;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf4fa;
+}
+
+tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+.status-available {
+    color: #16803c;
+    font-weight: bold;
+}
+
+.status-borrowed {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Library Rules */
+.rules {
+    background-color: #e8f1f8;
+}
+
+.rules ul {
+    max-width: 700px;
+    margin: auto;
+    padding-left: 25px;
+}
+
+.rules li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .category-grid,
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .category-grid,
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .search-section form {
+        flex-direction: column;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    background-color: #457b9d;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1fa8c;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.hero h2 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+/* All Sections */
+section {
+    padding: 35px 6%;
+}
+
+section h2 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 25px;
+}
+
+/* Search and Filters */
+.search-section form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input {
+    min-width: 240px;
+}
+
+button {
+    background-color: #1d3557;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #457b9d;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    background-color: white;
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px #00000012;
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.book-card {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.book-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    color: #1d3557;
+    margin-bottom: 8px;
+}
+
+.book-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Availability Labels */
+.available, .borrowed {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.available {
+    background-color: #d8f3dc;
+    color: #1b6b35;
+}
+
+.borrowed {
+    background-color: #ffe0e0;
+    color: #b42318;
+}
+
+/* Catalog Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1d3557;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf4fa;
+}
+
+tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+.status-available {
+    color: #16803c;
+    font-weight: bold;
+}
+
+.status-borrowed {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Library Rules */
+.rules {
+    background-color: #e8f1f8;
+}
+
+.rules ul {
+    max-width: 700px;
+    margin: auto;
+    padding-left: 25px;
+}
+
+.rules li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .category-grid,
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .category-grid,
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .search-section form {
+        flex-direction: column;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

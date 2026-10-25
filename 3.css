@@ -1,0 +1,250 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7faf5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #286b45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 34px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1c5034;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9ed92;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #e4f4dc;
+}
+
+.hero h2 {
+    color: #286b45;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 22px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #388653;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #1c5034;
+}
+
+/* Sections */
+section {
+    padding: 40px 6%;
+}
+
+section h2 {
+    text-align: center;
+    color: #286b45;
+    margin-bottom: 28px;
+}
+
+/* Food Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    background-color: white;
+    padding: 24px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+/* Recipe Cards */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-content {
+    padding: 20px;
+}
+
+.recipe-content h3 {
+    color: #286b45;
+    margin-bottom: 10px;
+}
+
+.recipe-content h4 {
+    margin-top: 14px;
+    color: #286b45;
+}
+
+.recipe-content ul {
+    padding-left: 22px;
+    margin-top: 5px;
+}
+
+.recipe-content p {
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+/* Meal Plan */
+.meal-section {
+    background-color: #eaf4e5;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #d5dfd1;
+    text-align: left;
+}
+
+th {
+    background-color: #286b45;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8ee;
+}
+
+.note {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Healthy Tips */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.tip-card h3 {
+    color: #286b45;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1c5034;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-grid,
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .recipe-grid,
+    .category-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    th, td {
+        padding: 9px;
+        font-size: 13px;
+    }
+}

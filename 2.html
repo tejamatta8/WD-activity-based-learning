@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library Management</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Digital Library</h1>
+        <p>Explore Books, Knowledge and Learning</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#books">Books</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#rules">Library Rules</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Our Digital Library</h2>
+        <p>Find your favorite books and discover new knowledge.</p>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-section">
+        <h2>Search Books</h2>
+
+        <form action="#catalog" method="get">
+            <input type="search" name="search"
+                   placeholder="Search by book title or author">
+
+            <select name="category">
+                <option value="">All Categories</option>
+                <option value="programming">Programming</option>
+                <option value="science">Science</option>
+                <option value="fiction">Fiction</option>
+                <option value="history">History</option>
+            </select>
+
+            <select name="availability">
+                <option value="">All Books</option>
+                <option value="available">Available</option>
+                <option value="borrowed">Borrowed</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <h2>Book Categories</h2>
+
+        <div class="category-grid">
+            <div class="category-card">💻 Programming</div>
+            <div class="category-card">🔬 Science</div>
+            <div class="category-card">📖 Fiction</div>
+            <div class="category-card">🏛️ History</div>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section id="books">
+        <h2>Featured Books</h2>
+
+        <div class="book-grid">
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/1d3557/ffffff?text=HTML+Basics"
+                     alt="HTML Basics book cover">
+                <h3>HTML Basics</h3>
+                <p>Author: John Smith</p>
+                <p>Category: Programming</p>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/457b9d/ffffff?text=Science"
+                     alt="Science book cover">
+                <h3>Introduction to Science</h3>
+                <p>Author: David Miller</p>
+                <p>Category: Science</p>
+                <span class="borrowed">Borrowed</span>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/6d597a/ffffff?text=Fiction"
+                     alt="Fiction book cover">
+                <h3>World of Fiction</h3>
+                <p>Author: Emily Brown</p>
+                <p>Category: Fiction</p>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/588157/ffffff?text=History"
+                     alt="History book cover">
+                <h3>World History</h3>
+                <p>Author: Robert Wilson</p>
+                <p>Category: History</p>
+                <span class="available">Available</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Book Catalog Table -->
+    <section id="catalog">
+        <h2>Book Catalog</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>B101</td>
+                        <td>HTML Basics</td>
+                        <td>John Smith</td>
+                        <td>Programming</td>
+                        <td class="status-available">Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>B102</td>
+                        <td>Introduction to Science</td>
+                        <td>David Miller</td>
+                        <td>Science</td>
+                        <td class="status-borrowed">Borrowed</td>
+                    </tr>
+
+                    <tr>
+                        <td>B103</td>
+                        <td>World of Fiction</td>
+                        <td>Emily Brown</td>
+                        <td>Fiction</td>
+                        <td class="status-available">Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>B104</td>
+                        <td>World History</td>
+                        <td>Robert Wilson</td>
+                        <td>History</td>
+                        <td class="status-available">Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Library Rules -->
+    <section id="rules" class="rules">
+        <h2>Library Rules</h2>
+        <ul>
+            <li>Carry your library ID card when borrowing books.</li>
+            <li>Return books before the due date.</li>
+            <li>Keep the library clean and maintain silence.</li>
+            <li>Handle books carefully and do not damage them.</li>
+            <li>Report lost or damaged books to the librarian.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Digital Library Management System</p>
+        <p>Read More | Learn More | Grow More</p>
+    </footer>
+
+</body>
+</html>
